@@ -1,24 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
+import MovieCard from './components/MovieCard';
 
 function App() {
+  const movie = {title:"Tenet",
+    year:"2022",
+    poster:"https://m.media-amazon.com/images/I/71OHH9HaB5S.jpg",
+    rating:"7.9",
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {/* <h1 className="text-3xl font-bold text-blue-600">Hello Tailwind!</h1> */}
+
+    <MovieCard movie={movie}/>
+    </>
   );
 }
 
