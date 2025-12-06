@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MovieCard from './components/MovieCard';
+import Timer from './components/Timer';
 
 function App() {
   const movie = {title:"Tenet",
@@ -11,9 +12,8 @@ function App() {
   }
   return (
     <>
-    {/* <h1 className="text-3xl font-bold text-blue-600">Hello Tailwind!</h1> */}
-
-    <MovieCard movie={movie}/>
+    {/* <MovieCard movie={movie}/> */}
+    <Timer/>
     </>
   );
 }
