@@ -32,7 +32,7 @@ function Timer() {
 
     return (<div className="bg-white m-64 p-2 shadow-lg rounded-xl">
         <p><strong>Seconds Elasped: </strong>{second}</p>
-        <div className="buttons space-x-1 text-center">
+        <div className="space-x-1 text-center">
             <button onClick={handleStart}>Start </button>
             <button onClick={handlePause}>Pause </button>
             <button onClick={handleReset}>Reset</button>
